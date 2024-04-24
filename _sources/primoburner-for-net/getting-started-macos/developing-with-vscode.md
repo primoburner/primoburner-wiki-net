@@ -196,5 +196,3 @@ or in Visual Studio Code, press `F5` to debug the application.
 ## Troubleshooting
 
 * You may get a `'DllNotFoundException' exception: Unable to load DLL 'libPrimoBurner.dylib': The specified module could not be found.` To fix that, copy the file `libPrimoBurner.dylib` to the project directory.
-
-* `Transcoder.Open` may fail if there is already a file `AAP.mp4` in the project directory. Delete `AAP.mp4` to solve that.         
