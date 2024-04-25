@@ -1,5 +1,4 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: Using DataDisc
 taxonomy:
     category: [docs]

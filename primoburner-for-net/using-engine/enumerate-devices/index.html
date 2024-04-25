@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Create a C# Console App in Visual Studio &#8212; PrimoBurner for .NET</title>
+    <title>Enumerate Devices &#8212; PrimoBurner for .NET</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -50,12 +50,12 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://wiki-net.primoburner.com/primoburner-for-net/getting-started-windows/create-a-c-sharp-console-app-in-visual-studio.html" />
+    <link rel="canonical" href="https://wiki-net.primoburner.com/primoburner-for-net/using-engine/enumerate-devices.html" />
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../../genindex/" />
     <link rel="search" title="Search" href="../../../search/" />
-    <link rel="next" title="Developing with Visual Studio Code" href="../developing-with-vscode/" />
-    <link rel="prev" title="Getting Started - Windows" href="../" />
+    <link rel="next" title="Device" href="../../using-device/" />
+    <link rel="prev" title="Engine" href="../" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -120,7 +120,7 @@ const thebe_selector_output = ".output, .cell_output"
   Getting Started
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../../getting-started-linux/">
    Getting Started - Linux
@@ -160,23 +160,23 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="../">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../getting-started-windows/">
    Getting Started - Windows
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
   <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="current">
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../getting-started-windows/create-a-c-sharp-console-app-in-visual-studio/">
      Create a C# Console App in Visual Studio
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../developing-with-vscode/">
+    <a class="reference internal" href="../../getting-started-windows/developing-with-vscode/">
      Developing with Visual Studio Code
     </a>
    </li>
@@ -198,19 +198,19 @@ const thebe_selector_output = ".output, .cell_output"
   Components
  </span>
 </p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../using-engine/">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../">
    Engine
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
   <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../using-engine/enumerate-devices/">
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Enumerate Devices
     </a>
    </li>
@@ -382,7 +382,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../../../_sources/primoburner-for-net/getting-started-windows/create-a-c-sharp-console-app-in-visual-studio.md"
+        <a href="../../../_sources/primoburner-for-net/using-engine/enumerate-devices.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -442,13 +442,8 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#create-the-visual-studio-project">
-   Create the Visual Studio project
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#troubleshooting">
-   Troubleshooting
+  <a class="reference internal nav-link" href="#complete-net-code">
+   Complete .NET code
   </a>
  </li>
 </ul>
@@ -460,7 +455,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Create a C# Console App in Visual Studio</h1>
+                <h1>Enumerate Devices</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -471,13 +466,8 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#create-the-visual-studio-project">
-   Create the Visual Studio project
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#troubleshooting">
-   Troubleshooting
+  <a class="reference internal nav-link" href="#complete-net-code">
+   Complete .NET code
   </a>
  </li>
 </ul>
@@ -490,27 +480,77 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="create-a-c-console-app-in-visual-studio">
-<h1>Create a C# Console App in Visual Studio<a class="headerlink" href="#create-a-c-console-app-in-visual-studio" title="Permalink to this headline">#</a></h1>
-<p>This topic describes the steps needed to configure a C# console application in Visual Studio. These steps have been verified to work with Visual Studio 2022 Community Edition, on Windows 11 Pro (22H2).</p>
-<section id="create-the-visual-studio-project">
-<h2>Create the Visual Studio project<a class="headerlink" href="#create-the-visual-studio-project" title="Permalink to this headline">#</a></h2>
-<ol>
-<li><p>Create a C# console application in Visual Studio.</p>
-<ul class="simple">
-<li><p>Name the project <code class="docutils literal notranslate"><span class="pre">enum-devices</span></code>.</p></li>
-<li><p>Select <code class="docutils literal notranslate"><span class="pre">Place</span> <span class="pre">solution</span> <span class="pre">and</span> <span class="pre">project</span> <span class="pre">in</span> <span class="pre">the</span> <span class="pre">same</span> <span class="pre">directory</span></code></p></li>
-<li><p>Choose <code class="docutils literal notranslate"><span class="pre">.NET</span> <span class="pre">6.0</span> <span class="pre">(Long-term</span> <span class="pre">support)</span></code> for Framework</p></li>
-</ul>
-</li>
-<li><p>In Visual Studio, select <code class="docutils literal notranslate"><span class="pre">Build</span> <span class="pre">|</span> <span class="pre">Configuration</span> <span class="pre">Manager</span></code> from the menu, then add the <code class="docutils literal notranslate"><span class="pre">x64</span></code> platform to the solution platforms.</p></li>
-<li><p>Replace the contents of Program.cs with this code:</p>
-<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">using</span><span class="w"> </span><span class="nn">PrimoSoftware.Burner</span><span class="p">;</span>
+  <section class="tex2jax_ignore mathjax_ignore" id="enumerate-devices">
+<h1>Enumerate Devices<a class="headerlink" href="#enumerate-devices" title="Permalink to this headline">#</a></h1>
+<p>Enumerate the optical devices connected to your system.</p>
+<p>To enumerate the available devices:</p>
+<ol class="simple">
+<li><p>Obtain a DeviceEnumerator object by calling the Engine.CreateDeviceEnumerator method.</p></li>
+<li><p>Use the DeviceEnumerator.CreateDevice method to create a Device object.</p></li>
+<li><p>Display the Device.DriveLetter and the Device.Description properties.</p></li>
+</ol>
+<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">private</span><span class="w"> </span><span class="k">static</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">EnumerateDevices</span><span class="p">(</span><span class="n">Engine</span><span class="w"> </span><span class="n">engine</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="c1">// create device enumerator</span>
+<span class="w">    </span><span class="k">using</span><span class="w"> </span><span class="p">(</span><span class="kt">var</span><span class="w"> </span><span class="n">enumerator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">engine</span><span class="p">.</span><span class="n">CreateDeviceEnumerator</span><span class="p">())</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">enumerator</span><span class="p">.</span><span class="n">Count</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="c1">// create a device; do not ask for exclusive access</span>
+<span class="w">            </span><span class="kt">var</span><span class="w"> </span><span class="n">device</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">enumerator</span><span class="p">.</span><span class="n">CreateDevice</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="k">false</span><span class="p">);</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="k">null</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">device</span><span class="p">)</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;({0}:) - {1}&quot;</span><span class="p">,</span>
+<span class="w">                    </span><span class="n">device</span><span class="p">.</span><span class="n">DriveLetter</span><span class="p">,</span><span class="w"> </span><span class="n">device</span><span class="p">.</span><span class="n">Description</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<section id="complete-net-code">
+<h2>Complete .NET code<a class="headerlink" href="#complete-net-code" title="Permalink to this headline">#</a></h2>
+<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">using</span><span class="w"> </span><span class="nn">System</span><span class="p">;</span>
 
-<span class="k">namespace</span><span class="w"> </span><span class="nn">EnumDevices</span>
+<span class="k">using</span><span class="w"> </span><span class="nn">PrimoSoftware.Burner</span><span class="p">;</span>
+
+<span class="k">namespace</span><span class="w"> </span><span class="nn">EnumerateDevices</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="k">class</span><span class="w"> </span><span class="nc">Program</span>
 <span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">private</span><span class="w"> </span><span class="k">static</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">EnumerateDevices</span><span class="p">(</span><span class="n">Engine</span><span class="w"> </span><span class="n">engine</span><span class="p">)</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="c1">// create device enumerator</span>
+<span class="w">            </span><span class="k">using</span><span class="w"> </span><span class="p">(</span><span class="kt">var</span><span class="w"> </span><span class="n">enumerator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">engine</span><span class="p">.</span><span class="n">CreateDeviceEnumerator</span><span class="p">())</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">enumerator</span><span class="p">.</span><span class="n">Count</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+<span class="w">                </span><span class="p">{</span>
+<span class="w">                    </span><span class="c1">// create a device; do not ask for exclusive access</span>
+<span class="w">                    </span><span class="kt">var</span><span class="w"> </span><span class="n">device</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">enumerator</span><span class="p">.</span><span class="n">CreateDevice</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="k">false</span><span class="p">);</span>
+<span class="w">                    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="k">null</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">device</span><span class="p">)</span>
+<span class="w">                    </span><span class="p">{</span>
+<span class="w">                        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;({0}:) - {1}&quot;</span><span class="p">,</span>
+<span class="w">                            </span><span class="n">device</span><span class="p">.</span><span class="n">DriveLetter</span><span class="p">,</span><span class="w"> </span><span class="n">device</span><span class="p">.</span><span class="n">Description</span><span class="p">);</span>
+<span class="w">                    </span><span class="p">}</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">private</span><span class="w"> </span><span class="k">static</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">EnumerateDevices</span><span class="p">()</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="c1">// Create engine</span>
+<span class="w">            </span><span class="k">using</span><span class="w"> </span><span class="p">(</span><span class="kt">var</span><span class="w"> </span><span class="n">engine</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Engine</span><span class="p">())</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="c1">// Initialize engine</span>
+<span class="w">                </span><span class="n">engine</span><span class="p">.</span><span class="n">Initialize</span><span class="p">();</span>
+
+<span class="w">                </span><span class="n">EnumerateDevices</span><span class="p">(</span><span class="n">engine</span><span class="p">);</span>
+
+<span class="w">                </span><span class="c1">// terminate engine</span>
+<span class="w">                </span><span class="n">engine</span><span class="p">.</span><span class="n">Shutdown</span><span class="p">();</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+
 <span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Main</span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span>
 <span class="w">        </span><span class="p">{</span>
 <span class="w">            </span><span class="c1">// Initialize PrimoBurner</span>
@@ -519,30 +559,7 @@ title="Print to PDF"
 <span class="w">            </span><span class="c1">// Set license. To run PrimoBurner in demo mode, comment the next line out</span>
 <span class="w">            </span><span class="n">Library</span><span class="p">.</span><span class="n">SetLicense</span><span class="p">(</span><span class="s">&quot;license-xml-string&quot;</span><span class="p">);</span>
 
-<span class="w">            </span><span class="c1">// Create engine</span>
-<span class="w">            </span><span class="k">using</span><span class="w"> </span><span class="p">(</span><span class="kt">var</span><span class="w"> </span><span class="n">engine</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Engine</span><span class="p">())</span>
-<span class="w">            </span><span class="p">{</span>
-<span class="w">                </span><span class="c1">// Initialize engine</span>
-<span class="w">                </span><span class="n">engine</span><span class="p">.</span><span class="n">Initialize</span><span class="p">();</span>
-
-<span class="w">                </span><span class="c1">// create device enumerator</span>
-<span class="w">                </span><span class="k">using</span><span class="w"> </span><span class="p">(</span><span class="kt">var</span><span class="w"> </span><span class="n">enumerator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">engine</span><span class="p">.</span><span class="n">CreateDeviceEnumerator</span><span class="p">())</span>
-<span class="w">                </span><span class="p">{</span>
-<span class="w">                    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">enumerator</span><span class="p">.</span><span class="n">Count</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-<span class="w">                    </span><span class="p">{</span>
-<span class="w">                        </span><span class="c1">// create a device; do not ask for exclusive access</span>
-<span class="w">                        </span><span class="kt">var</span><span class="w"> </span><span class="n">device</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">enumerator</span><span class="p">.</span><span class="n">CreateDevice</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="k">false</span><span class="p">);</span>
-<span class="w">                        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="k">null</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">device</span><span class="p">)</span>
-<span class="w">                        </span><span class="p">{</span>
-<span class="w">                            </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;({0}:) - {1}&quot;</span><span class="p">,</span>
-<span class="w">                                </span><span class="n">device</span><span class="p">.</span><span class="n">DriveLetter</span><span class="p">,</span><span class="w"> </span><span class="n">device</span><span class="p">.</span><span class="n">Description</span><span class="p">);</span>
-<span class="w">                        </span><span class="p">}</span>
-<span class="w">                    </span><span class="p">}</span>
-<span class="w">                </span><span class="p">}</span>
-
-<span class="w">                </span><span class="c1">// terminate engine</span>
-<span class="w">                </span><span class="n">engine</span><span class="p">.</span><span class="n">Shutdown</span><span class="p">();</span>
-<span class="w">            </span><span class="p">}</span>
+<span class="w">            </span><span class="n">EnumerateDevices</span><span class="p">();</span>
 
 <span class="w">            </span><span class="n">Library</span><span class="p">.</span><span class="n">Shutdown</span><span class="p">();</span>
 <span class="w">        </span><span class="p">}</span>
@@ -550,19 +567,6 @@ title="Print to PDF"
 <span class="p">}</span>
 </pre></div>
 </div>
-</li>
-<li><p><a class="reference external" href="https://github.com/primoburner/primoburner-net-core/releases/">Download</a> the Windows version of PrimoBurner for .NET (net60). The file you need will have a name similar to <code class="docutils literal notranslate"><span class="pre">primoburner-net60-v5.0.1-demo.1-windows.zip</span></code> - the version number may differ.</p></li>
-<li><p>Unzip in a location of your choice, then copy the files: <code class="docutils literal notranslate"><span class="pre">PrimoBurner.clrcore.x64.dll</span></code> and <code class="docutils literal notranslate"><span class="pre">PrimoBurner64.dll</span></code>, to the project’s directory.</p></li>
-<li><p>Switch to the project in Visual Studio and add a reference to <code class="docutils literal notranslate"><span class="pre">PrimoBurner.clrcore.x64.dll</span></code>.</p></li>
-<li><p>Add the <code class="docutils literal notranslate"><span class="pre">PrimoBurner64.dll</span></code> to your project simply as a file, open file properties, and set the ‘Copy to Output Directory’ to ‘Copy if newer’, so it is copied to the output directory automatically. The <code class="docutils literal notranslate"><span class="pre">PrimoBurner.clrcore.x64.dll</span></code> needs <code class="docutils literal notranslate"><span class="pre">PrimoBurner64.dll</span></code> and will not work without it.</p></li>
-<li><p>Build the project (Ctrl + Shift + B)</p></li>
-</ol>
-</section>
-<section id="troubleshooting">
-<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">#</a></h2>
-<ul class="simple">
-<li><p>You may get a <code class="docutils literal notranslate"><span class="pre">'DllNotFoundException'</span> <span class="pre">exception:</span> <span class="pre">Unable</span> <span class="pre">to</span> <span class="pre">load</span> <span class="pre">DLL</span> <span class="pre">'PrimoBurner64.dll':</span> <span class="pre">The</span> <span class="pre">specified</span> <span class="pre">module</span> <span class="pre">could</span> <span class="pre">not</span> <span class="pre">be</span> <span class="pre">found.</span></code> To fix that, copy the file <code class="docutils literal notranslate"><span class="pre">PrimoBurner64.dll</span></code> to <code class="docutils literal notranslate"><span class="pre">bin/x64/Debug/net6.0</span></code> under the project’s directory.</p></li>
-</ul>
 </section>
 </section>
 
@@ -579,7 +583,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./primoburner-for-net/getting-started-windows"
+            path: "./primoburner-for-net/using-engine"
         },
         predefinedOutput: true
     }
@@ -597,13 +601,13 @@ title="Print to PDF"
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Getting Started - Windows</p>
+            <p class="prev-next-title">Engine</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../developing-with-vscode/" title="next page">
+    <a class='right-next' id="next-link" href="../../using-device/" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Developing with Visual Studio Code</p>
+        <p class="prev-next-title">Device</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
