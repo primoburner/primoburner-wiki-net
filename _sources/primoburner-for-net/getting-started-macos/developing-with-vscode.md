@@ -1,6 +1,6 @@
 ---
 title: Developing with Visual Studio Code
-metadata:
+html_meta:
     description: This page describes the steps needed to setup Visual Studio Code for PrimoBurner .NET development on macOS
 taxonomy:
     category: docs

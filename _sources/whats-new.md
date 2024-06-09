@@ -1,7 +1,7 @@
 ---
-title: What’s New
-metadata:
-    description: Discover what&#039;s new and improved in the latest PrimoBurner version.
+title: What's New
+html_meta:
+    description: Discover what's new and improved in the latest PrimoBurner version.
 taxonomy:
     category: docs
 toc:
@@ -9,7 +9,7 @@ toc:
     headinglevel: 2              # Maximum heading level to show in TOC    
 ---
 
-# What’s New
+# What's New
 
 ## Version 5.0
 

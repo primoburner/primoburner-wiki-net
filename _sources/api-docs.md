@@ -1,6 +1,6 @@
 ---
 title: API Docs
-metadata:
+html_meta:
     description: Links to the PrimoBurner API documentation for .NET.
 taxonomy:
     category: docs

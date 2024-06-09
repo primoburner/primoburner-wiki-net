@@ -1,6 +1,6 @@
 ---
 title: About PrimoBurner for .NET
-metadata:
+html_meta:
     description: This topic describes the .NET development requirements for Windows, Mac and Linux.
 taxonomy:
     category: docs

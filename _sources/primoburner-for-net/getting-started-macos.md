@@ -1,6 +1,6 @@
 ---
 title: Getting Started - macOS
-metadata:
+html_meta:
     description: This chapter contains topics about configuring your environment for AVBlocks .NET development on macOS.
 taxonomy:
     category: docs

@@ -3,7 +3,7 @@ title: Using Engine
 taxonomy:
     category: [docs]
     tags: [.NET,Engine]
-metadata:
+html_meta:
     description: How to initialize the PrimoBurner engine and to enumerate the system devices
 ---
 

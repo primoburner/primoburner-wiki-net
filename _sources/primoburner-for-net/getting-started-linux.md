@@ -1,6 +1,6 @@
 ---
 title: Getting Started - Linux
-metadata:
+html_meta:
     description: This chapter contains topics about configuring your environment for AVBlocks .NET development on Linux.
 taxonomy:
     category: docs
